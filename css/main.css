@@ -164,12 +164,28 @@ p {
 .section2 .section2-img {
     float: left;
     width: 50%;
+    position: relative;
+    overflow: hidden;
 }
 
 .section2 .section2-img img {
     width: 70%;
     float: right;
     padding: 80px 50px 0 0;
+}
+
+.section2 .section2-img-layer {
+    background-color: rgba(0, 0, 0, 0.274);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transition: top 3s;
+}
+.section2-img:hover .section2-img-layer{
+    top: 0;
 }
 
 .section2 .section2-content {
